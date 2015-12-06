@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require "dotenv"
+Dotenv.load
+
+require "rovi_api"
+r = RoviAPI.client
+
+require "pry"
+Pry.start
